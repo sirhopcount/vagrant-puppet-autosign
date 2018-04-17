@@ -1,0 +1,5 @@
+// Markdown Lint Rules
+// https://github.com/mivok/markdownlint/blob/master/docs/RULES.md
+
+// Disabled rules
+"~MD013", // line length should be no more than 80 characters

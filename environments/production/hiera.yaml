@@ -1,0 +1,17 @@
+---
+version: 5
+
+defaults:
+  datadir: data  # Location of the hiera data
+  data_hash: yaml_data  # Use the built-in YAML backend.
+
+hierarchy:
+  - name: "Per-node data"
+    path: "nodes/%{::fqdn}.yml"
+
+  - name: "Per-role data"
+    path: "roles/%{::role}.yml"
+
+  - name: "Common data"
+    path: "common.yml"
+

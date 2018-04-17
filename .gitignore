@@ -1,0 +1,7 @@
+*.vagrant*
+*modules*
+*.tmp*
+*Puppetfile.lock*
+*.librarian*
+*dev*
+bak/
